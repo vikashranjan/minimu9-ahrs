@@ -70,7 +70,7 @@ void streamRawValues(IMU& imu)
     while(1)
     {
         imu.read();
-        printf("%7d %7d %7d  %7d %7d %7d  %7d %7d %7d\n",
+        printf("%7d,%7d,%7d,%7d,%7d,%7d,%7d,%7d,%7d\n",
                imu.raw_m[0], imu.raw_m[1], imu.raw_m[2],
                imu.raw_a[0], imu.raw_a[1], imu.raw_a[2],
                imu.raw_g[0], imu.raw_g[1], imu.raw_g[2]
